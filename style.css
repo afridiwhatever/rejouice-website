@@ -1,0 +1,72 @@
+@font-face {
+  font-family: nb;
+  src: url("./src/fonts/NBInternationalProBoo.ttf");
+}
+
+@font-face {
+  font-family: rejouice;
+  src: url("./src/fonts/Rejouice-Headline.ttf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: nb;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#hero-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+
+#hero-background-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#hero-section-content {
+  position: absolute;
+  top: 0;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hero-section-content nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.35vw;
+  font-weight: 100;
+  padding: 6vh 3vw;
+}
+
+#hero-section-content nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero-section h1 {
+  padding-left: 1.7vw;
+}
+
+#hero-section h1 span {
+  font-family: rejouice;
+  font-size: 26.7vw;
+  font-weight: 100;
+  line-height: 29vw;
+}
