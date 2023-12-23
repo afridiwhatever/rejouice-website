@@ -68,13 +68,13 @@ cursorEffect();
 
 function page2Animation() {
   gsap.to("#scroll", {
+    scaleX: 1,
+    ease: "power2.out",
     duration: 1.6,
     scrollTrigger: {
       trigger: "#scroll",
       scroller: "#main",
     },
-    ease: "power2.out",
-    scaleX: 1,
   });
 
   gsap.from(["#content-header", "#desc"], {
