@@ -8,15 +8,6 @@
   src: url("./src/fonts/Rejouice-Headline.ttf");
 }
 
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: nb;
-} */
-
 *,
 *::before,
 *::after {
@@ -86,7 +77,8 @@ body {
   border-radius: 50%;
   background-color: #fa5f38;
   position: fixed;
-  top: 0;
+  top: 50%;
+  left: 50%;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -97,4 +89,44 @@ body {
 #cursor h5 {
   font-size: 1.1vw;
   color: rgb(52, 41, 41);
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #faf8f3;
+}
+
+#page2content {
+  padding: 2.7vw;
+  padding-top: 5.6vw;
+  color: #0e0e0e;
+}
+
+#content-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0.7vw;
+}
+
+#content-header h3 {
+  font-size: 1.6vw;
+  font-weight: 100;
+  line-height: 2vw;
+}
+
+#scroll {
+  height: 0.5px;
+  width: 100%;
+  background-color: #0e0e0e;
+  transform-origin: 0% 0%;
+  transform: scaleX(0);
+}
+
+#desc {
+  font-size: 4.3vw;
+  font-weight: 100;
+  margin-top: 0.7vw;
 }
