@@ -23,6 +23,11 @@ body {
   width: 100%;
 }
 
+/* #main {
+  min-height: 100%;
+  width: 100%;
+} */
+
 #topline {
   height: 1px;
   width: 100%;
@@ -86,8 +91,10 @@ body {
   width: 7.5vw;
   border-radius: 50%;
   background-color: #fa5f38;
-  position: fixed;
-  top: 25%;
+  /* position: fixed; */
+  position: absolute;
+  /* position: sticky; */
+  top: 600px;
   left: 50%;
   z-index: 1;
   display: flex;
@@ -157,6 +164,25 @@ body {
   font-size: 1.2vw;
   font-weight: 100;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.96);
+}
+
+#page3-top-section p span:nth-child(1) {
+  font-size: 18px;
+  background-color: black;
+  padding: 6px 14px;
+  color: white;
+  border-radius: 16px;
+  margin-left: 8px;
+  margin-right: 18px;
+}
+
+#page3-top-section p span:nth-child(2) {
+  transform: rotate(-90deg);
+  color: #3b3b38;
 }
 
 #page3-top-section h2 {
@@ -220,7 +246,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
 }
 
 #page3-elements .logo-container img {

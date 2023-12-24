@@ -46,11 +46,14 @@ function cursorEffect() {
   heroSection.addEventListener("mousemove", (event) => {
     gsap.to(cursor, {
       x: event.x - heroSection.offsetWidth / 2,
-      y: event.y - heroSection.offsetHeight / 2,
+      y: event.y - heroSection.offsetHeight / 2.1,
+      // x: event.x,
+      // y: event.y,
     });
   });
 
   heroSection.addEventListener("mouseenter", () => {
+    console.log("hero");
     gsap.to(cursor, {
       scale: 1,
       opacity: 1,
@@ -58,6 +61,7 @@ function cursorEffect() {
   });
 
   heroSection.addEventListener("mouseleave", () => {
+    console.log("non-hero");
     gsap.to(cursor, {
       scale: 0,
       opacity: 0,
