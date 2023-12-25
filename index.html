@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="https://rejouice.com/assets/favicon/favicon-32x32.png" type="image/x-icon">
@@ -159,24 +161,16 @@
                 <p> ↵ Contact</p>
             </div>
 
-            <div id="swiperdiv">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
-                    </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+            <div class="scroller" data-direction="left" data-speed="fast">
+                <div class="scroller__inner">
+                    <img src="src/images/group.avif" alt="" />
+                    <img src="src/images/lady.avif" alt="" />
+                    <img src="src/images/car.avif" alt="" />
+                    <img src="src/images/ring.avif" alt="" />
+                    <img src="src/images/power.avif" alt="" />
                 </div>
             </div>
+
 
         </div>
 
@@ -194,7 +188,9 @@
         integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
     <script src="script.js"></script>
 </body>
