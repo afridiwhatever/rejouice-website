@@ -47,8 +47,6 @@ function cursorEffect() {
     gsap.to(cursor, {
       x: event.x - heroSection.offsetWidth / 2,
       y: event.y - heroSection.offsetHeight / 2.1,
-      // x: event.x,
-      // y: event.y,
     });
   });
 
@@ -92,3 +90,49 @@ function page2Animation() {
   });
 }
 page2Animation();
+
+function seatCursorEffect() {
+  const container = document.querySelector("#page4");
+  const seatCursor = document.querySelector("#seat-cursor");
+
+  container.addEventListener("mousemove", (event) => {
+    gsap.to(seatCursor, {
+      x: event.x - container.offsetWidth / 2,
+      y: event.y - container.offsetHeight / 2,
+    });
+  });
+
+  container.addEventListener("mouseenter", () => {
+    gsap.from(seatCursor, {
+      rotation: -90,
+    });
+
+    gsap.to(seatCursor, {
+      scale: 1,
+      opacity: 1,
+    });
+  });
+
+  container.addEventListener("mouseleave", () => {
+    gsap.to(seatCursor, {
+      scale: 0,
+      opacity: 0,
+    });
+  });
+}
+
+seatCursorEffect();
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
